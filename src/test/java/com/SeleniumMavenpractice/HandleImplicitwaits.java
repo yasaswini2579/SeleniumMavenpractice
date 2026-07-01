@@ -15,6 +15,8 @@ public class HandleImplicitwaits {
 		driver.get("https://www.hyrtutorials.com/p/waits-demo.html");
         driver.findElement(By.id("btn1")).click();
         driver.findElement(By.id("txt1")).sendKeys("Yashuu");
+        driver.findElement(By.id("btn2")).click();
+        driver.findElement(By.id("txt2")).sendKeys("Yashuu");
         driver.close();
 	}
 
