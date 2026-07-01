@@ -19,21 +19,24 @@ public class screenshotpractice {
 		
 		//FILE
 //	File src =	driver.getScreenshotAs(OutputType.FILE);
-//	File dest = new File("./Screenshotttt/google.png");
+//	File dest = new File("./Screenshotttt/imb6.png");
 //	FileUtils.copyFile(src, dest);
+//	System.out.println("Screen shot saved successfully");
 //	driver.close();
-		
-		//Bytes
-//	byte[] src =	driver.getScreenshotAs(OutputType.BYTES);
-//	FileOutputStream fos = new FileOutputStream("./Screenshotttt/google.png");
-//	fos.write(src);
-//	driver.close();
-     //Base64
-	String basescreenshot =	driver.getScreenshotAs(OutputType.BASE64);
-	byte[] src = Base64.getDecoder().decode(basescreenshot);
-	FileOutputStream dest = new FileOutputStream("./Screenshotttt/google1.jpg");
-	dest.write(src);
+		//Byte
+	byte[] bytearr =	driver.getScreenshotAs(OutputType.BYTES);
+	FileOutputStream fos = new FileOutputStream("./Screenshotttt/imggg.png");
+	fos.write(bytearr);
+	System.out.println("Screen shot saved successfully");
 	driver.close();
+	//Base64
+//	String basearr =	driver.getScreenshotAs(OutputType.BASE64);
+//	byte[] dest = Base64.getDecoder().decode(basearr);
+//	FileOutputStream fos = new FileOutputStream("./Screenshotttt/imb6.png");
+//	fos.write(dest);
+//	fos.close();
+//	System.out.println("Screen shot saved successfully");
+//	driver.close();
 	}
 
 }
